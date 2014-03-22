@@ -30,6 +30,25 @@
 	<div class="row-fluid">
 		<section class="col-sm-8">
 			<header>Your Shopping Cart&nbsp;&nbsp;<span><a href="#">CONTINUE SHOPPING</a></span></header>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Item</th>
+						<th>Quantity</th>
+						<th>Price</th>
+						<th>Change</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><%= image_tag('2.png') %></td>
+						<td><span class="glyphicon glyphicon-plus-sign"></span><span class="amount">1</span><span class="glyphicon glyphicon-minus-sign"></span></td>
+						<td></td>
+						<td><span class="glyphicon glyphicon-remove-sign"></span><span class="remove">Remove</span></td>
+
+					</tr>
+				</tbody>
+			</table>
 		</section>
 		<aside class="col-sm-4">
 			 <%= image_tag('image-1.png') %>
