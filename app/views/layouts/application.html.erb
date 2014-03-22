@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Decorist</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+	<div class="hero-unit">
+		<h1 class="title">COMPLETE YOUR ORDER</br>
+		<small><i>Making interior design personal, affordable and easy</i></small></h1>
+		<div class="row-fluid text-center">
+			<div class="col-md-4">
+				<label>1</label>
+				<span>View Cart</span>
+			</div>
+			<div class="col-md-4">
+				<label>2</label>
+				<span>Payment</span>
+			</div>
+			<div class="col-md-4">
+				<label>3</label>
+				<span>Additional info</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row-fluid">
+		<section class="col-sm-8">
+			<header>Your Shopping Cart&nbsp;&nbsp;<span><a href="#">CONTINUE SHOPPING</a></span></header>
+		</section>
+		<aside class="col-sm-4">
+			 <%= image_tag('image-1.png') %>
+		</aside>
+	</div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>

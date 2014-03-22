@@ -1,0 +1,43 @@
+@import "bootstrap";
+
+.title {
+	font-size: 28px !important;
+	text-align: center;
+	font-weight: normal;
+} 
+small {
+	font-family: 'justusitalicoldstyle';
+	font-size: 18px;
+}
+
+label{
+	display: table;
+	width: 40px;
+	height: 40px;
+	border: solid 1px #999999;
+	border-radius: 40px;
+	font-size: 20px;
+	font-family: 'FuturaBTMedium';
+	line-height: 40px;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 auto;
+}
+span {
+	font-family: 'justusitalicoldstyle';
+	font-size: 18px;
+	font-style: italic;
+}
+.main {
+	width: 100%;
+}
+section {
+	border: 1px solid black;
+	height: 100%;
+}
+aside {
+	
+}
+span a {
+	color: blue;
+}
