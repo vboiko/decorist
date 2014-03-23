@@ -27,13 +27,20 @@ label{
 	text-align: center;
 	margin: 0 auto;
 }
-span {
+.col-md-4 {
 	font-family: 'justusitalicoldstyle';
 	font-size: 18px;
 	font-style: italic;
+	margin-bottom: 25px;
+
 }
-.main {
-	width: 100%;
+
+header {
+	margin-top: 25px;
+	i{
+		font-size: 18px;
+		font-family: 'justusitalicoldstyle';
+	}
 }
 section {
 	background-color: #fff;
@@ -42,17 +49,21 @@ section {
 aside {
 	
 }
-span a {
-	color: blue;
+.happiness {
+	color: #78a8bb!important;
 }
-table tbody tr td img {
-	height: 60px;
-	width: 60px;
+ table tbody tr td {
+	vertical-align: middle !important;
+	img {
+		height: 60px;
+		width: 60px;
+		}
 }
+
 td {
 	font-family: 'FuturaBTMedium';
 	span{
-		color: #78a8bb;
+		color: #78a8bb!important;
 		font-size: 14px;
 		margin-left: 4px;
 		margin-right: 4px;
@@ -60,4 +71,14 @@ td {
 			text-transform:uppercase;
 		}
 	}
+}
+.button {
+	background-color: #78a8bb;
+}
+
+.borderless tbody tr td {
+    border: none;
+}
+#stats {
+	background-color: #fafafa;
 }
