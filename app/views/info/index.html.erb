@@ -1,0 +1,53 @@
+
+<%= link_to 'View Cart', cart_path %>
+<div class="row-fluid text-center">
+	<div class="col-md-4">
+		<label class="round">1</label>
+		<span>View Cart</span>
+	</div>
+	<div class="col-md-4">
+		<label class="round">2</label>
+		<span>Payment</span>
+	</div>
+	<div class="col-md-4">
+		<label class="round">3</label>
+		<span>Additional info</span>
+	</div>
+</div>
+<div>
+<div class="row-fluid">
+	<section class="col-sm-8">
+    	<p id="info">Basic Information</p>
+    	<hr>
+    	<form>
+    	<p>I am looking for a <input type="text" placeholder="product (ex. chair, sofa)" required> for my <input type="text" placeholder="room (ex. living room, bedroom)" required> in <input type="text" placeholder="color or materials" required> and my budget is <input type="text" placeholder="price (ex.$500)" required>.</p>
+
+    	<p id="add_info">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</p>
+		<textarea rows="6" cols="65" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc." required>
+		</textarea>
+
+		<p id="photos">Upload Photos</p>
+		<hr>
+		<p>The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room. Capture key colors, textures and patterns that you want to keep</p>
+		<div id="upload_form">
+			DRAG AND DROP PHOTOS HERE<br>
+			OR <a href="#">SELECT FILE TO UPLOAD</a>
+		</div>
+
+		<p>Additional Information <small>(Optional)</small></p>
+		<hr>
+		<span>PASTE A URL FOR A PINTEREST BOARD, HOUZZ IDEA BOOK OR OTHER WEBSITE</span>
+		<input type="url" name="pinterest_board">
+		<p>SHARE ONE OF YOUR DECORIST DESIGN BOARD</p>
+		<button type="button" class="btn btn-primary button">ATTACH DECORIST DESIGN BOARD</button>
+
+		<p class="pull-right">
+		  <button type="button" class="btn btn-primary button">SAVE DRAFT</button>
+		  <button type="submit" type="button" class="btn btn-primary button">SEND TO DESIGNER</button>
+		</p>
+		</form>
+		</section>
+		<aside class="col-sm-4">
+			 <%= image_tag('image-1.png') %>
+		</aside>
+	</div>

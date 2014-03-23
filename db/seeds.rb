@@ -7,3 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
 Product.create!(title: 'personal shopper package', image_url: 'product.png', price: 69.00)
+Product.create!(title: 'second possible product', image_url: 'sofa.png', price: 79.00)
