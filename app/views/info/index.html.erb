@@ -1,20 +1,22 @@
 
-<%= link_to 'View Cart', cart_path %>
 <div class="row-fluid text-center">
 	<div class="col-md-4">
-		<label class="round">1</label>
+	<%= link_to cart_path do %>
+		<span class="round">1</span>
+	<% end %>
 		<span>View Cart</span>
 	</div>
 	<div class="col-md-4">
-		<label class="round">2</label>
+	<%= link_to payment_path do %>
+		<span class="round">2</span>
+	<% end %>
 		<span>Payment</span>
 	</div>
 	<div class="col-md-4">
-		<label class="round">3</label>
+		<span class="round">3</span>
 		<span>Additional info</span>
 	</div>
 </div>
-<div>
 <div class="row-fluid">
 	<section class="col-sm-8">
     	<p id="info">Basic Information</p>

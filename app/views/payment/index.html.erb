@@ -1,40 +1,45 @@
-<%= link_to 'Additional Info', info_path %>
 <div class="row-fluid text-center">
 	<div class="col-md-4">
-		<label class="round">1</label>
+	<%= link_to cart_path do %>
+		<span class="round">1</span>
+	<% end %>
 		<span>View Cart</span>
 	</div>
 	<div class="col-md-4">
-		<label class="round">2</label>
+		<span class="round">2</span>
 		<span>Payment</span>
 	</div>
 	<div class="col-md-4">
-		<label class="round">3</label>
+	<%= link_to info_path do %>
+		<span class="round">3</span>
+	<% end %>
 		<span>Additional info</span>
 	</div>
 </div>
 
 <div class="row-fluid">
 	<section class="col-sm-8">
-		<p>Your Billing Information</p>
-		<hr>
-		<form id="payment">
-		<div id="full_name">
-			<label>FIRST NAME</label>
-			<input type="text" id="first_name" name="first_name" required>
-
-			<label>LAST NAME</label>
-			<input type="text" id="last_name" name="last_name" required>
+		<legend>Your Billing Information</legend>
+		<form method="post" action="" role="form" class="form-inline">
+		<div>
+			<div class="form-group">
+			<label class="control-label" for="first_name">FIRST NAME</label>
+			<input type="text" id="first_name" name="first_name" value="" class="form-control"required>
+			</div>
+			<div class="form-group">
+			<label class="control-label" for="last_name">LAST NAME</label>
+			<input type="text" id="last_name" name="last_name" value="" class="form-control"required>
+			</div>
 		</div>
 
 		<div id="zip_code">
-			<label>ZIP CODE</label>
-			<input type="number" id="zip_code" name="zip_code" required>
+			<label class="control-label">ZIP CODE</label>
+			<input type="number" id="zip_code" name="zip_code" class="form-control" required>
 		</div>
 
 		<div id="card_number">
-			<label>CARD NUMBER</label>
-			<input type="number" id="card_number" name="card_number" required>
+			<label class="control-label">CARD NUMBER</label>
+			<input type="number" id="card_number" name="card_number" class="form-control" required>
 		</div>
 
 		<div id="exp_date">
@@ -70,7 +75,9 @@
 		<hr>
 		<p class="pull-right">
 		  <a href="#" class="happiness" data-toggle="modal" data-target="#myModal">HAPPINESS GARANTEE!</a>
+		  <%= link_to info_path do %>
 		  <button type="submit" type="button" class="btn btn-primary button">PLACE ORDER</button>
+		  <% end %>
 		</p>
 		</form>
 		</section>

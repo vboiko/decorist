@@ -1,19 +1,21 @@
-<%= link_to 'Payment', payment_path %>
-	<div class="row-fluid text-center">
-			<div class="col-md-4">
-				<label class="round">1</label>
-				<span>View Cart</span>
-			</div>
-			<div class="col-md-4">
-				<label class="round">2</label>
-				<span>Payment</span>
-			</div>
-			<div class="col-md-4">
-				<label class="round">3</label>
-				<span>Additional info</span>
-			</div>
-		</div>
-
+<div class="row-fluid text-center">
+	<div class="col-md-4">
+		<span class="round">1</span>
+		<span>View Cart</span>
+	</div>
+	<div class="col-md-4">
+	<%= link_to payment_path do %>
+		<span class="round">2</span>
+	<% end %>
+		<span>Payment</span>
+	</div>
+	<div class="col-md-4">
+	<%= link_to info_path do %>
+		<span class="round">3</span>
+	<% end %>
+		<span>Additional info</span>
+	</div>
+</div>
 
 	<div class="row-fluid">
 		<section class="col-sm-8">
@@ -55,7 +57,9 @@
 			</div>
 			<p class="pull-right">
 			  <a href="#" class="happiness" data-toggle="modal" data-target="#myModal">HAPPINESS GARANTEE!</a>
+			  <%= link_to payment_path do %>
 			  <button type="button" class="btn btn-primary button">NEXT-PAYMENT</button>
+			  <% end %>
 			</p>
 			<!-- Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
