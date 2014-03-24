@@ -19,31 +19,31 @@
 
 <div class="row-fluid">
 	<section class="col-sm-8">
-		<legend>Your Billing Information</legend>
-		<form method="post" action="" role="form" class="form-inline">
-		<div>
-			<div class="form-group">
-			<label class="control-label" for="first_name">FIRST NAME</label>
-			<input type="text" id="first_name" name="first_name" value="" class="form-control"required>
+		<legend class="italic-header"><i>Your Billing Information</i></legend>
+		<form method="post" role="form" class="form-group" id="form-font">
+		<div id="full-name">
+			<div class="name">
+			<label class="control-label">FIRST NAME</label>
+			<input type="text" class="form-control" required>
 			</div>
-			<div class="form-group">
-			<label class="control-label" for="last_name">LAST NAME</label>
-			<input type="text" id="last_name" name="last_name" value="" class="form-control"required>
+			<div class="name">
+			<label class="control-label">LAST NAME</label>
+			<input type="text" class="form-control" required>
 			</div>
 		</div>
 
-		<div id="zip_code">
+		<div id="zip-code">
 			<label class="control-label">ZIP CODE</label>
-			<input type="number" id="zip_code" name="zip_code" class="form-control" required>
+			<input type="number" class="form-control" required>
 		</div>
 
-		<div id="card_number">
+		<div id="card-number">
 			<label class="control-label">CARD NUMBER</label>
-			<input type="number" id="card_number" name="card_number" class="form-control" required>
+			<input type="number" class="form-control" required>
 		</div>
 
-		<div id="exp_date">
-		    <label>Expiration Date</label>
+		<div id="exp-date">
+		    <label class="control-label">Expiration Date</label>
 		      <SELECT NAME="CCExpiresMonth" >
 		        <OPTION VALUE="" SELECTED>01
 		        <OPTION VALUE="02">02

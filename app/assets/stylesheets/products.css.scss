@@ -5,6 +5,7 @@
 	background-color: #fafafa;
 }
 .title {
+	font-family: 'FuturaBTMedium';
 	font-size: 28px !important;
 	text-align: center;
 	font-weight: normal;
@@ -81,4 +82,34 @@ td {
 }
 #stats {
 	background-color: #fafafa;
+}
+.popup_header {
+	font-size: 22px;
+	font-family: 'justusitalicoldstyle';
+	text-align: center;
+}
+.popup_content {
+	font-size: 12px;
+}
+.italic-header {
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-family: 'justusitalicoldstyle';
+}
+#full-name {
+	display: inline-flex;
+}
+.name {
+	margin-right: 7px;
+}
+#form-font{
+	font-weight: normal!important;
+	font-size: 12px;
+}
+#zip-code {
+	width: 20%!important;
+}
+#card-number {
+	width: 50%!important
 }
