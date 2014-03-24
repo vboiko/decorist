@@ -1,8 +1,6 @@
 <div class="row-fluid text-center">
 	<div class="col-md-4">
-	<%= link_to cart_path do %>
-		<span class="round">1</span>
-	<% end %>
+	<%= link_to '1', payment_path, class: "round" %>
 		<span>View Cart</span>
 	</div>
 	<div class="col-md-4">
@@ -10,9 +8,7 @@
 		<span>Payment</span>
 	</div>
 	<div class="col-md-4">
-	<%= link_to info_path do %>
-		<span class="round">3</span>
-	<% end %>
+	<%= link_to '3', payment_path, class: "round" %>
 		<span>Additional info</span>
 	</div>
 </div>
@@ -43,35 +39,43 @@
 		</div>
 
 		<div id="exp-date">
+		<div>
 		    <label class="control-label">Expiration Date</label>
-		      <SELECT NAME="CCExpiresMonth" >
-		        <OPTION VALUE="" SELECTED>01
-		        <OPTION VALUE="02">02
-		        <OPTION VALUE="03">03
-		        <OPTION VALUE="04">04
-		        <OPTION VALUE="05">05
-		        <OPTION VALUE="06">06
-		        <OPTION VALUE="07">07
-		        <OPTION VALUE="08">08
-		        <OPTION VALUE="09">09
-		        <OPTION VALUE="10">10
-		        <OPTION VALUE="11">11
-		        <OPTION VALUE="12">12
+		    <div id="date-option">
+		      <SELECT>
+		        <OPTION VALUE="" SELECTED>01</OPTION>
+		        <OPTION VALUE="02">02</OPTION>
+		        <OPTION VALUE="03">03</OPTION>
+		        <OPTION VALUE="04">04</OPTION>
+		        <OPTION VALUE="05">05</OPTION>
+		        <OPTION VALUE="06">06</OPTION>
+		        <OPTION VALUE="07">07</OPTION>
+		        <OPTION VALUE="08">08</OPTION>
+		        <OPTION VALUE="09">09</OPTION>
+		        <OPTION VALUE="10">10</OPTION>
+		        <OPTION VALUE="11">11</OPTION>
+		        <OPTION VALUE="12">12</OPTION>
 		      </SELECT>
-		      <SELECT NAME="CCExpiresYear">
-		        <OPTION VALUE="" SELECTED>2014
-		        <OPTION VALUE="15">2015
-		        <OPTION VALUE="16">2016
-		        <OPTION VALUE="17">2017
-		        <OPTION VALUE="18">2018
-		        <OPTION VALUE="19">2019
-		        <OPTION VALUE="20">2020
+		      <SELECT>
+		        <OPTION VALUE="" SELECTED>2014</OPTION>
+		        <OPTION VALUE="15">2015</OPTION>
+		        <OPTION VALUE="16">2016</OPTION>
+		        <OPTION VALUE="17">2017</OPTION>
+		        <OPTION VALUE="18">2018</OPTION>
+		        <OPTION VALUE="19">2019</OPTION>
+		        <OPTION VALUE="20">2020</OPTION>
 		      </SELECT>
-		    <label>CVV</label>
-		       <input id="cvv" size="4" type="text" value="" required>
+		      </div>
+		 </div>
+		 <div id="cvv">
+			    <label class="control-label">CVV</label>
+			    <input type="text" class="form-control" required>
+		  </div>
 		  </div>
 		  <br>
-		  <input type="checkbox" checked="checked" name="save" value="">SAVE CARD FOR FUTURE USE<br>
+		  <div id="checkbox">
+		  <input id="save-card" type="checkbox" checked="checked"><label for="save-card">SAVE CARD FOR FUTURE USE</label>
+		  </div>
 		<hr>
 		<p class="pull-right">
 		  <a href="#" class="happiness" data-toggle="modal" data-target="#myModal">HAPPINESS GARANTEE!</a>
