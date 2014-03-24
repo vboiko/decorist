@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap";
+
+.container {
+	width: 960px;
+	background-color: #fafafa;
+}
+.title {
+	font-family: 'FuturaBTMedium';
+	font-size: 28px !important;
+	text-align: center;
+	font-weight: normal;
+} 
+small {
+	font-family: 'justusitalicoldstyle';
+	font-size: 18px;
+}
+
+.round{
+	display: table;
+	width: 40px;
+	height: 40px;
+	border: solid 1px #999999;
+	border-radius: 40px;
+	font-size: 20px;
+	font-family: 'FuturaBTMedium';
+	line-height: 40px;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 auto;
+}
+.col-md-4 {
+	font-family: 'justusitalicoldstyle';
+	font-size: 18px;
+	font-style: italic;
+	margin-bottom: 25px;
+
+}
+
+header {
+	margin-top: 25px;
+	i{
+		font-size: 18px;
+		font-family: 'justusitalicoldstyle';
+	}
+}
+section {
+	background-color: #fff;
+	height: 100%;
+}
+aside {
+	
+}
+.happiness {
+	color: #78a8bb!important;
+}
+ table tbody tr td {
+	vertical-align: middle !important;
+	img {
+		height: 60px;
+		width: 60px;
+		}
+}
+
+td {
+	font-family: 'FuturaBTMedium';
+	span{
+		color: #78a8bb!important;
+		font-size: 14px;
+		margin-left: 4px;
+		margin-right: 4px;
+		.amount .remove {
+			text-transform:uppercase;
+		}
+	}
+}
+.button {
+	background-color: #78a8bb;
+	color: #eee;
+}
+
+.borderless tbody tr td {
+    border: none;
+}
+#stats {
+	background-color: #fafafa;
+}
+.popup_header {
+	font-size: 22px;
+	font-family: 'justusitalicoldstyle';
+	text-align: center;
+}
+.popup_content {
+	font-size: 12px;
+}
+
+ // HACKs and TRICKS 
+.clearfix:after {
+
+     visibility: hidden;
+
+     display: block;
+
+     font-size: 0;
+
+     content: " ";
+
+     clear: both;
+
+     height: 0;
+
+     }
+
+.clearfix { display: inline-block; }
+
+/* start commented backslash hack \*/
+
+* html .clearfix { height: 1%; }
+
+.clearfix { display: block; }
+
+/* close commented backslash hack */

@@ -1,9 +1,8 @@
 Decorist::Application.routes.draw do
-  get "info/index", as: "info"
-  get "payment/index", as: "payment"
-  get "cart/index", as: "cart"
-  resources :products
-  root to: "product#index"
+  get "order/cart", as: "cart"
+  get "order/payment", as: "payment"
+  get "order/info", as: "info"
+  root to: "order#cart"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
