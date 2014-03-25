@@ -33,7 +33,8 @@
 		<div id="upload-form">
 		<span class="glyphicon glyphicon-picture"></span><br>
 			DRAG AND DROP PHOTOS HERE<br>
-			OR <a href="#" class="blue-links">SELECT FILE TO UPLOAD</a>
+			OR <br>
+			<span class="blue-links upload">SELECT FILE TO UPLOAD<input type="file"></span>
 		</div>
 
 		<legend id="photos" class="italic-header"><i>Additional Information <span class="text-muted">(Optional)</span></i></legend>
@@ -44,8 +45,20 @@
 		<div>
 		<p class="pull-right">
 		  <button type="button" class="btn btn-primary button blue-links gray">SAVE DRAFT</button>
-		  <button type="submit button" class="btn btn-primary button">SEND TO DESIGNER</button>
+		  <button type="submit button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary button">SEND TO DESIGNER</button>
 		</p>
+		<!-- Modal -->
+					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  						<div class="modal-dialog modal-lg">
+    					<div class="modal-content">
+					      <div class="modal-body">
+					      <p class="title final">THANKS! YOUR PERSONAL SHOPPER WILL START SHOPPING!</p>
+					      <h2 class="popup_header"><i>You will recieve an email with a link to your shopping solution <br> in 5 business days!</i></h2>
+					      <button type="button" class="btn btn-primary btn-block button">SHOP PERSONALIZED FINDS</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 		</div>
 		</form>
 		</section>

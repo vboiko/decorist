@@ -92,6 +92,16 @@ td {
 	background-color: #78a8bb;
 	color: #eee;
 }
+.final {
+	//white-space: nowrap;
+	font-size: 24px!important;
+}
+.btn-block {
+    width:210px; 
+    margin: 20px -100px; 
+    position:relative;
+    left:50%;
+}
 
 .borderless tbody tr td {
     border: none;
@@ -103,6 +113,7 @@ td {
 	font-size: 22px;
 	font-family: 'justusitalicoldstyle';
 	text-align: center;
+	margin-top: 5px;
 }
 .popup_content {
 	font-size: 12px;
