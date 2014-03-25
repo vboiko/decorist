@@ -30,13 +30,13 @@ $('#promo').on('click', '#add', function() {
     id:     'promo-input',
     class: 'form',
     type:   'text',
-    css: {'width': '30%'}
+    css: {'width': '35%'}
   });
   var button = $('<input/>', {
     id: 'promo-button',
     type: 'submit',
     value: 'APPLY',
-    class: 'btn btn-primary'
+    class: 'btn btn-primary button'
   });
   $('#promo').append(input).append(button);
 
@@ -48,8 +48,8 @@ $('#promo').on('click', '#add', function() {
     var value = $('#promo-input').val().toUpperCase();
     
     var remove = $('<a/>', {
-      class: 'glyphicon glyphicon-remove-sign',
-      text: ' REMOVE',
+      class: 'glyphicon glyphicon-remove-sign remove',
+      text: 'REMOVE',
       click: function () { $('#promo').remove(); }
 });
     
@@ -59,7 +59,20 @@ $('#promo').on('click', '#add', function() {
     
   });
 
+//Place order button
+  
+// $('#place-order').click(function(){
+//    window.location='/order/info';
+// });
 
-
-
+//ALERT
+    
+  $('#designer').on('click', function() {
+    if($('.alert').length > 0){
+    return true;  
+  }
+  var p = $('<p/>', {text: 'Please fill all the fields!', class: 'alert'});
+  $('#status-box').remove();
+  $('.clearfix').after(p);
+});
 });

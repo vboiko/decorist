@@ -109,6 +109,8 @@ tbody {
 }
 .form {
 	margin-bottom: 15px;
+	margin-right: 5px;
+	border-radius: 2px;
 }
 .small-font{
 	font-size: 13px;
@@ -143,4 +145,10 @@ hr {
 	border: 0;
 	border-top: 1px solid #eeeeee;
 	z-index: -1;
+}
+.alert {
+	width: 100%;
+	background-color: red;
+	height: 3em;
+	color: #fff;
 }

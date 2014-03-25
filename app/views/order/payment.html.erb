@@ -9,7 +9,7 @@
 		<span>Payment</span>
 	</div>
 	<div class="col-md-4 inactive-page">
-	<%= link_to '3', info_path, class: "round" %>
+	<%= link_to '3', info_path, class: "round", id: "info-page" %>
 		<span>Additional info</span>
 	</div>
 </div>
@@ -77,12 +77,10 @@
 		  <div id="checkbox">
 		  <input id="save-card" type="checkbox" checked="checked"><label for="save-card">SAVE CARD FOR FUTURE USE</label>
 		  </div>
-		<hr>
+		  <legend></legend>
 		<p class="pull-right">
 		  <a href="#" class="happiness" data-toggle="modal" data-target="#myModal">HAPPINESS GARANTEE!</a>
-		  <%= link_to info_path do %>
-		  <button type="submit" type="button" class="btn btn-primary button">PLACE ORDER</button>
-		  <% end %>
+		  <button type="submit" id="place-order" class="btn btn-primary button">PLACE ORDER</button>
 		</p>
 		<!-- Modal -->
 					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

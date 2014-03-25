@@ -17,11 +17,12 @@
 	<h1 id="status-header">CONGRATS! YOUR ORDER HAS BEEN PROCESSED</h1>
 	<p id="status-content"><i>To get your advice please complete the form below. This can be done now or you can return to it later.</i></p>
 </div>
+
 <div class="row-fluid">
 	<section class="col-sm-8">
 	<div class="info">
     	<legend class="italic-header"><i>Basic Information</i></legend>
-    	<form id="basic-info" class="form-inline" role="form">
+    <form id="basic-info" class="form-inline" role="form">
     	<p>I am looking for a <input id="prod" type="text" class="form-control input-size" placeholder="product (ex. chair, sofa)" required> for my <input id="room" type="text" class="form-control input-size-big" placeholder="room (ex. living room, bedroom)" required> in <input id="color" type="text" class="form-control input-size" placeholder="color or materials" required> and my budget is <input id="budget" type="text" class="form-control input-size" placeholder="price (ex.$500)" required>.</p>
 	</div>
     	<p class="add-info">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</p>
@@ -30,12 +31,11 @@
 
 		<legend id="photos" class="italic-header"><i>Upload Photos</i></legend>
 		<p class="small-font">The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room. Capture key colors, textures and patterns that you want to keep.</p>
-		<div id="upload-form">
+	<div id="upload-form">
 		<span class="glyphicon glyphicon-picture"></span><br>
-			DRAG AND DROP PHOTOS HERE<br>
-			OR <br>
-			<span class="blue-links upload">SELECT FILE TO UPLOAD<input id="file-upload" type="file"></span>
-		</div>
+		DRAG AND DROP PHOTOS HERE<br>
+		OR <label for="files" class="blue-links upload">SELECT FILE TO UPLOAD<input type="file" id="files" class="hidden"></label>
+	</div>
 
 		<legend id="photos" class="italic-header"><i>Additional Information <span class="text-muted">(Optional)</span></i></legend>
 		<p class="add-info">PASTE A URL FOR A PINTEREST BOARD, HOUZZ IDEA BOOK OR OTHER WEBSITE</p>
@@ -45,7 +45,7 @@
 		<div>
 		<p class="pull-right">
 		  <button type="button" class="btn btn-primary button blue-links gray">SAVE DRAFT</button>
-		  <button type="submit button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary button">SEND TO DESIGNER</button>
+		  <button type="submit button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary button" id="designer">SEND TO DESIGNER</button>
 		</p>
 		<!-- Modal -->
 					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -65,4 +65,5 @@
 		<aside class="col-sm-4">
 			 <%= image_tag('image-1.png') %>
 		</aside>
+</div>
 </div>

@@ -14,6 +14,9 @@
 
 @import "bootstrap";
 
+a:hover{
+	text-decoration: none;
+}
 .container {
 	width: 960px;
 	background-color: #fafafa;
@@ -61,12 +64,14 @@ header {
 section {
 	background-color: #fff;
 	height: 100%;
+	width: 75%;
 }
 aside {
-	
+	width: 25%;
 }
 .happiness {
 	color: #78a8bb!important;
+	font-size: 14px;
 }
  table tbody tr td {
 	vertical-align: middle !important;
@@ -81,8 +86,8 @@ td {
 	span{
 		color: #78a8bb!important;
 		font-size: 14px;
-		margin-left: 4px;
-		margin-right: 4px;
+		margin-left: 2px;
+		margin-right: 2px;
 		.amount .remove {
 			text-transform:uppercase;
 		}
@@ -138,9 +143,12 @@ td {
 		color: #aaaaaa;
 	}
 }
-
-
-
+.hidden{
+	display: none;
+}
+// input:invalid {
+//     border: 1px solid red;
+// }
 
  // HACKs and TRICKS 
 .clearfix:after {
