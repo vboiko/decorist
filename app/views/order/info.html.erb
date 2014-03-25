@@ -22,10 +22,10 @@
 	<div class="info">
     	<legend class="italic-header"><i>Basic Information</i></legend>
     	<form id="basic-info" class="form-inline" role="form">
-    	<p>I am looking for a <input type="text" class="form-control input-size" placeholder="product (ex. chair, sofa)" required> for my <input type="text" class="form-control input-size-big" placeholder="room (ex. living room, bedroom)" required> in <input type="text" class="form-control input-size" placeholder="color or materials" required> and my budget is <input type="text" class="form-control input-size" placeholder="price (ex.$500)" required>.</p>
+    	<p>I am looking for a <input id="prod" type="text" class="form-control input-size" placeholder="product (ex. chair, sofa)" required> for my <input id="room" type="text" class="form-control input-size-big" placeholder="room (ex. living room, bedroom)" required> in <input id="color" type="text" class="form-control input-size" placeholder="color or materials" required> and my budget is <input id="budget" type="text" class="form-control input-size" placeholder="price (ex.$500)" required>.</p>
 	</div>
     	<p class="add-info">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</p>
-		<textarea class="form-control form" rows="4" cols="45" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc." required>
+		<textarea id="add-info" class="form-control form" rows="4" cols="45" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc." required>
 		</textarea>
 
 		<legend id="photos" class="italic-header"><i>Upload Photos</i></legend>
@@ -34,7 +34,7 @@
 		<span class="glyphicon glyphicon-picture"></span><br>
 			DRAG AND DROP PHOTOS HERE<br>
 			OR <br>
-			<span class="blue-links upload">SELECT FILE TO UPLOAD<input type="file"></span>
+			<span class="blue-links upload">SELECT FILE TO UPLOAD<input id="file-upload" type="file"></span>
 		</div>
 
 		<legend id="photos" class="italic-header"><i>Additional Information <span class="text-muted">(Optional)</span></i></legend>

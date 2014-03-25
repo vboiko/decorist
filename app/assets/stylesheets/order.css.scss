@@ -10,8 +10,13 @@ tbody {
 }
 #stats {
 	background-color: #fafafa;
+	position: relative;
 }
-
+#promo {
+	position: absolute;
+	bottom: 8px;
+	left: 12px;
+}
 // PAYMENT
 
 .italic-header {
