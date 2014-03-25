@@ -41,6 +41,7 @@ small {
 	font-weight: normal;
 	text-align: center;
 	margin: 0 auto;
+	background-color: white;
 }
 .col-md-4 {
 	font-family: 'justusitalicoldstyle';
@@ -106,6 +107,29 @@ td {
 .popup_content {
 	font-size: 12px;
 }
+
+.active-page {
+	border: 1px solid #2d2d2d;
+	font-style: normal;
+}
+.inactive-page {
+	a {
+		text-decoration: none;
+		color: #aaaaaa;
+		font-style: normal;
+		&:hover {
+			border: 1px solid #2d2d2d;
+			font-style: normal;
+			color: black;		
+		}
+	}
+	span {
+		color: #aaaaaa;
+	}
+}
+
+
+
 
  // HACKs and TRICKS 
 .clearfix:after {

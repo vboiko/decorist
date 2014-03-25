@@ -86,7 +86,7 @@ tbody {
 	margin: 5px 5px 5px 0;
 }
 .input-size-big {
-	width: 35%!important;
+	width: 38%!important;
 	margin: 5px 5px 5px 0;
 }
 .info {
@@ -127,4 +127,11 @@ tbody {
 	background-color: #eee!important;
 	color: #78a8bb!important;
 	border: 1px solid #eee!important;
+}
+hr {
+	margin-top: 35px;
+	margin-bottom: -21px;
+	border: 0;
+	border-top: 1px solid #eeeeee;
+	z-index: -1;
 }
