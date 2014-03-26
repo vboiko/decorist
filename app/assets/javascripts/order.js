@@ -23,7 +23,8 @@
 
 //ADD PROMO CODE
 
-$('#promo').on('click', '#add', function() {
+$('#promo').on('click', '#add', function(e) {
+  e.preventDefault();
   $('#promo > a').remove(); 
   
   var input = $('<input/>', {
