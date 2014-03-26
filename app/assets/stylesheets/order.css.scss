@@ -8,6 +8,21 @@ tbody {
 		border-style: none;
 	}
 }
+#item {
+	width: 40%;
+	font-size: 12px;
+	white-space: nowrap;
+}
+#quantity{
+	width: 24%;
+}
+#num{
+	margin-left: 2px;
+	margin-right: 4px;
+}
+.cell{
+	width: 18%;
+}
 #stats {
 	background-color: #fafafa;
 	position: relative;
@@ -23,7 +38,7 @@ tbody {
 	font-size: 20px;
 	padding-top: 15px;
 	padding-bottom: 10px;
-	font-family: 'justusitalicoldstyle';
+	font-family: 'justusitalicoldstyle'; 
 }
 #full-name{
 	display: inline-flex;
@@ -133,6 +148,9 @@ tbody {
 }
 .upload {
 	position: relative;
+	&:hover{
+		cursor: pointer;
+	}
 }
 .gray {
 	background-color: #eee!important;
@@ -149,6 +167,8 @@ hr {
 .alert {
 	width: 100%;
 	background-color: red;
-	height: 3em;
+	height: 2.8em;
 	color: #fff;
-}
+	font-size: 18px;
+	text-transform: uppercase;
+	}

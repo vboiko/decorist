@@ -22,9 +22,9 @@
 	<section class="col-sm-8">
 	<div class="info">
     	<legend class="italic-header"><i>Basic Information</i></legend>
-    <form id="basic-info" class="form-inline" role="form">
+    </div>
+    	<form id="basic-info" class="form-inline" role="form">
     	<p>I am looking for a <input id="prod" type="text" class="form-control input-size" placeholder="product (ex. chair, sofa)" required> for my <input id="room" type="text" class="form-control input-size-big" placeholder="room (ex. living room, bedroom)" required> in <input id="color" type="text" class="form-control input-size" placeholder="color or materials" required> and my budget is <input id="budget" type="text" class="form-control input-size" placeholder="price (ex.$500)" required>.</p>
-	</div>
     	<p class="add-info">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</p>
 		<textarea id="add-info" class="form-control form" rows="4" cols="45" placeholder="Helpful information would be approximate dimensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc." required>
 		</textarea>
@@ -47,6 +47,9 @@
 		  <button type="button" class="btn btn-primary button blue-links gray">SAVE DRAFT</button>
 		  <button type="submit button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary button" id="designer">SEND TO DESIGNER</button>
 		</p>
+		</div>
+		</form>
+		</section>
 		<!-- Modal -->
 					<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   						<div class="modal-dialog modal-lg">
@@ -59,11 +62,8 @@
 					    </div>
 					  </div>
 					</div>
-		</div>
-		</form>
-		</section>
+		
 		<aside class="col-sm-4">
 			 <%= image_tag('image-1.png') %>
 		</aside>
-</div>
 </div>

@@ -1,6 +1,7 @@
 Decorist::Application.routes.draw do
   get "order/cart", as: "cart"
   get "order/payment", as: "payment"
+  post "order/payment"
   get "order/info", as: "info"
   root to: "order#cart"
   # The priority is based upon order of creation: first created -> highest priority.

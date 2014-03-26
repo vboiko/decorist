@@ -71,7 +71,7 @@ $('#promo').on('click', '#add', function() {
     if($('.alert').length > 0){
     return true;  
   }
-  var p = $('<p/>', {text: 'Please fill all the fields!', class: 'alert'});
+  var p = $('<p/>', {text: 'Please complete all fields!', class: 'alert'});
   $('#status-box').remove();
   $('.clearfix').after(p);
 });
