@@ -19,6 +19,7 @@
   });
   $('.remove').click(function() {
       $(this).closest('tr').remove();
+      $('.sub').text('00.00');
   });
 
 //ADD PROMO CODE
